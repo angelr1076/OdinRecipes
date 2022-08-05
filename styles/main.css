@@ -1,6 +1,20 @@
+:root {
+  --almond: rgba(251, 232, 202, 0.4);
+  --charcoal: rgba(97, 97, 97);
+  --white: #ffffff;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+}
+
+body {
+  line-height: 1.5;
 }
 
 .main-header {
@@ -11,13 +25,19 @@
   font-weight: 900;
 }
 
-.page-header {
-  margin: .5em 1em;
-}
-
 a {
   text-decoration: none;
   color: salmon;
+}
+
+.link-header {
+  font-size: 2.25rem;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.recipe-header {
+  font-size: 3rem;
 }
 
 .container {
@@ -28,6 +48,14 @@ a {
   width: 80%;
   max-width: 650px;
   margin: 2em auto;
+}
+
+.container.recipe {
+  background-color: var(--almond);
+  color: var(--charcoal);
+  padding: 2em;
+  border: 1px solid rgb(179, 172, 172, 0.5);
+  border-radius: 5px;
 }
 
 .col {
@@ -43,7 +71,6 @@ a {
 .img {
   width: 100%;
   max-width: 750px;
-  /* border-radius: 10px; */
 }
 
 .row {
@@ -51,9 +78,11 @@ a {
 }
 
 .card {
+  background-color: var(--almond);
   padding: 1.5em;
   border: 1px solid gray;
   border-radius: 3px;
+  
 }
 
 hr {
@@ -76,5 +105,5 @@ hr {
   .container {
     flex-direction: column;
   }
-  
+
 }
